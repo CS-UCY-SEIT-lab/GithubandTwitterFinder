@@ -1,3 +1,6 @@
+#sultan.zhaksylykov@gmail.com
+
+
 from flask import Flask,render_template,request
 from flask import Flask, request, render_template, redirect, abort, flash, jsonify
 import requests
@@ -8,10 +11,10 @@ from twitter import *
 app = Flask(__name__)
 
 base_url = "https://api.github.com/users/"
-CONSUMER_KEY = "TDERv6FbgSEqfq0tayf9vdun0"
-CONSUMER_SECRET = "fw7buieTk9hwm25OvetaSIMXR3SBBlzDjVB4FWpJ7DvCLk5vOs"
-ACCESS_KEY = "1019518139648958464-ncrsX7jH6P52UDrtkmPBc7Dop9ej1T"
-ACCESS_SECRET = "6oO3UrPo0xfqHeVSNHHooGzb5u6SHdOvZ0rV9CaZHGSuh"
+CONSUMER_KEY = "PUT YOUR SECRET KEY HERE"
+CONSUMER_SECRET = "PUT YOUR SECRET KEY HERE"
+ACCESS_KEY = "PUT YOUR ACCESS KEY HERE"
+ACCESS_SECRET = "PUT YOUR ACCEES KEY HERE"
 
 twitter = Twitter(
             auth=OAuth(ACCESS_KEY, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET))
@@ -147,3 +150,5 @@ def _jinja2_filter_datetime(date, fmt=None):
 
 if __name__ == "__main__":
     app.run(debug = True)
+
+
